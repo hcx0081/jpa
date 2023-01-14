@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="persistenceUnit" transaction-type="RESOURCE_LOCAL">
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="200081"/>
+            
+            <!-- 因为使用Hibernate实现，所以可以使用Hibernate的配置 -->
+            <!-- Echo all executed SQL to stdout -->
+            <property name="hibernate.show_sql" value="true"></property>
+            <!-- Format SQL -->
+            <property name="hibernate.format_sql" value="true"></property>
+            
+            <property name="hibernate.hbm2ddl.auto" value="update"></property>
+        </properties>
+    </persistence-unit>
+</persistence>
