@@ -5,7 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 @Data
 @Table(name = "person")// 数据库表名

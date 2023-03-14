@@ -8,7 +8,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 @Data
 /* 以下两个注解防止栈溢出 */

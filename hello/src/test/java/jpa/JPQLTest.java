@@ -9,7 +9,7 @@ import javax.persistence.Query;
 import java.util.Arrays;
 
 /**
- * @Description:
+ * {@code @Description:}
  */
 public class JPQLTest {
     @Test
