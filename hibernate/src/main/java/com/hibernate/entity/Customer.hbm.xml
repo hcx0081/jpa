@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.hibernate.entity.Customer" table="customer">
+        <id name="id" column="id">
+            <!-- 主键策略 -->
+            <generator class="increment"/><!-- 自增 -->
+        </id>
+        <property name="name" column="name"></property>
+
+        <set name="billSet" lazy="extra" cascade="all"><!-- lazy默认值为true，即懒加载 -->
+            <!-- 外键，根据该字段连接 -->
+            <key column="cid"></key>
+            <one-to-many class="com.hibernate.entity.Bill"></one-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

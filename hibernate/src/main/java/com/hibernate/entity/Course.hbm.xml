@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.hibernate.entity.Course" table="course">
+        <id name="id" column="id">
+            <!-- 主键策略 -->
+            <generator class="increment"/><!-- 自增 -->
+        </id>
+        <property name="cname" column="cname"></property>
+
+        <!-- 多对多 -->
+        <set name="studentSet" table="stu_cour"><!-- 需要添加table属性，因为不需要添加中间表实体类 -->
+            <key column="cid"></key>
+            <many-to-many class="com.hibernate.entity.Student" column="sid"></many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>
