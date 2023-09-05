@@ -10,7 +10,7 @@ import javax.persistence.Persistence;
 import java.util.HashSet;
 
 /**
- * {@code @Description:}
+ * {@code @description:}
  */
 public class RelationshipTest {
     /**

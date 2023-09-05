@@ -3,7 +3,7 @@ package com.hibernate.entity;
 import lombok.Data;
 
 /**
- * @Description:
+ * @description:
  */
 @Data
 public class Person {

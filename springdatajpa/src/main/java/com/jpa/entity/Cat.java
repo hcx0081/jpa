@@ -5,7 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 
 /**
- * {@code @Description:}
+ * {@code @description:}
  */
 @Data
 @Entity

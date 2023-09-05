@@ -8,7 +8,7 @@ import org.hibernate.query.Query;
 import org.junit.Test;
 
 /**
- * @Description:
+ * @description:
  */
 public class HQLTest {
     @Test

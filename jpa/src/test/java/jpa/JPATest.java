@@ -9,7 +9,7 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
 /**
- * {@code @Description:}
+ * {@code @description:}
  */
 public class JPATest {
     @Test

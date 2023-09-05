@@ -10,7 +10,7 @@ import javax.transaction.Transactional;
 import java.util.List;
 
 /**
- * {@code @Description:}
+ * {@code @description:}
  */
 @Repository
 public interface CatRepository extends JpaRepository<Cat, Long> {

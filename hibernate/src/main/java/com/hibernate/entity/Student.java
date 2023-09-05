@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.Set;
 
 /**
- * @Description:
+ * @description:
  */
 @Data
 public class Student {

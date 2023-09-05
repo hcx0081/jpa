@@ -5,7 +5,7 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 /**
- * @Description:
+ * @description:
  */
 @Data
 /* 以下两个注解防止栈溢出 */

@@ -7,7 +7,7 @@ import lombok.ToString;
 import javax.persistence.*;
 
 /**
- * {@code @Description:}
+ * {@code @description:}
  */
 @Data
 /* 以下两个注解防止栈溢出 */
